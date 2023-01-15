@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <h1>Hello World</h1>
+    <br>
+        <p style= "font-weight: bold;"> THIS IS MY MAIN CODE</p>
+        <footer>
+            <p> Think of a more interesting footer</p>
+        </footer>
+        <i class="fa-sharp fa-solid fa-face-angry"></i>
+        <i class="fa-sharp fa-solid fa-face-angry fa-xs"></i>
+        <i class="fa-sharp fa-solid fa-face-angry fa-md"></i>
+        <i class="fa-sharp fa-solid fa-face-angry fa-lg"></i>
+        <i class="fa-sharp fa-solid fa-face-angry fa-2x"></i>
+        <i class="fa-sharp fa-solid fa-face-angry fa-3x"></i>
+        <i class="fa-sharp fa-solid fa-face-angry fa-5x"></i>
+    </br>
+        <i class="fa-sharp fa-solid fa-address-card fa-10x" ></i>
+        <a  href="https://www.facebook.com/PhuocTan.username" aria-label= "facebook" style = "text-decoration: none;">
+            <i class="fa-brands fa-facebook fa-10x"></i>
+        </a>
+        <a href="https://www.pinterest.com/" style="text-decoration: none;">
+            <i class="fa-brands fa-pinterest fa-10x"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/kingt-channel-2a10aa255/" style="text-decoration: none;">
+            <i class="fa-brands fa-linkedin fa-10x"></i>
+        </a>
+        <video src="./istockphoto-699620004-640_adpp_is.mp4" controls loop autoplay>This browser does not support this <code>video</code></video>
+        <!-- controls cho phép diều khiển nhanh chậm video hay audio, loop: lặp lại vịnh cữu video hay audio, autoplay: tự động lay video hay audio ngay
+        khi load lại trình duyệt -->
+        <audio src="./You-can-read-the-table-of-cont1638281324.mp3" controls loop>This browser does not support this <code>audio</code></audio>
+        
+        <!-- Cấu trúc của một bảng bao gồm: 
+        - Thẻ table khai báo sẽ tạo một bảng và chứa bảng đó
+        - Bên trong thể table là các thẻ tr (trow) đại diện cho các hàng. Bên trong trow là các th và td đại diện cho từng ô trên một dòng theo hàng
+        ngang. th đại diện cho tiêu để cột
+        - Thuộc tính rowspan = "số lượng" là để gộp hai hàng tính từ hàng đang sử dụng thuộc tính và các hàng liền sau nó.
+        - Thuộc tính border = "độ đậm (1,2,3,...)" để tạo dường viền9 cho bảng theo độ đậm -->
+        <table border="1">
+            <tr>
+                <th>Child's Name</th>
+                <th>Parent's Name</th>
+            </tr>
+            <tr>
+                <td rowspan = "2">Catherine</td>
+                <td>Michael Mcarthy</td>
+            </tr>
+            <tr>
+                <td>Colleen Mcarthy</td>
+            </tr>
+            <tr>
+             <td>Maggie</td>
+             <td>Sheild Mgee</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Edward</td> <td> Catherine Howard</td>
+            </tr>
+            <tr>
+                <td>Jeff Howard</td>
+            </tr>
+        </table>
+        <abbr title = "Monday" style = "text-decoration: none;">Mon</abbr>
+        <!-- abbr là thẻ viết tắt ta có thể viết tắt nội dung trong thẻ này. Vá nếu muốn hiển thị chi tiết, ta có thể set thuộc tính title bằng nội dung 
+        chi tiết thì khi người dùng hover và chữ viết tắt sẽ hiển thị đầy đủ chữ đó -->
+        <p>Hi everyone. This is my first web, I do that by <code>HTML</code> with intrustion by coursera</p>
+        <!-- thẻ code dùng để định dạng lại phông chữ cho nội dung, thường là kí hiệu cho các thuật ngữ máy tính, lập trình -->
+        <button>OK</button>
+        <!-- Thẻ button giúp tạo một nút -->
+        <meter min = "0", max = "1000", value = "50">50%</meter>
+        <meter min = "0", max = "1", value = ".25">50%</meter>
+        <!-- - Thẻ meter giúp tạo một định dạng đồ thị theo giá trị ta điền vào. Min là giá trị đầu, max là giá trị chính giữa, value là tỉ lệ theo % giữa min và max
+        - Ví dụ min là 0, max là 100, value là 50 thì tỉ lệ là 50%
+        - Ta cũng có thể set thằng giá trị % cho value như min = 0, max = 1, value = .25 (0.25 = 25%) thì tỉ lệ là 25% -->
+        <progress max = "100" value = "70">Tỉ lệ hoàn thành</progress>
+        <!-- Thẻ progress cho biết tỉ lệ hoàn thành bao nhiêu dựa trên value và max -->
+        <p>This text will go from left to right</p>
+        <p><bdo dir="rtl">This text will go from right to left.</bdo></p>
+        <!-- Thẻ bdo với thuộc tính dir = "ltr (mặc định left to right) hoặc rtl (right to left)" dùng để định danh hướng đọc văn bản-->
+    </main>
+</body>
+</html>
